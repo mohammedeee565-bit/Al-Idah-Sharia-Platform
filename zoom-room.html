@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' blob: https://www.gstatic.com https://source.zoom.us https://*.zoom.us; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://source.zoom.us https://*.zoom.us; font-src 'self' data: https://fonts.gstatic.com https://source.zoom.us https://*.zoom.us; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firebaseinstallations.googleapis.com https://us-central1-alidah-99472.cloudfunctions.net https://source.zoom.us https://zoom.us https://*.zoom.us wss://*.zoom.us; img-src 'self' data: blob: https:; media-src 'self' blob:; worker-src 'self' blob:; frame-src https://*.zoom.us https://zoom.us;">
+  <title>قاعة Zoom | منصة الإيضاح</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://source.zoom.us/6.2.0/css/bootstrap.css">
+  <link rel="stylesheet" href="https://source.zoom.us/6.2.0/css/react-select.css">
+  <link rel="stylesheet" href="zoom-room.css">
+</head>
+<body>
+  <header class="room-header">
+    <a href="index.html" class="back-link">← العودة إلى منصة الإيضاح</a>
+    <div><span class="live-dot"></span> قاعة المحاضرة المباشرة</div>
+  </header>
+  <main class="room-main">
+    <section class="room-intro">
+      <p class="eyebrow">AL-IDAH · ZOOM MEETING SDK</p>
+      <h1 id="room-title">قاعة Zoom</h1>
+      <p id="room-status" role="status">جاري التحقق من صلاحية الدخول وتجهيز القاعة...</p>
+    </section>
+    <section id="meetingSDKElement" class="meeting-sdk-element" aria-label="اجتماع Zoom"></section>
+    <section id="room-help" class="room-help" hidden></section>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-functions-compat.js"></script>
+  <script src="https://source.zoom.us/6.2.0/lib/vendor/react.min.js"></script>
+  <script src="https://source.zoom.us/6.2.0/lib/vendor/react-dom.min.js"></script>
+  <script src="https://source.zoom.us/6.2.0/lib/vendor/redux.min.js"></script>
+  <script src="https://source.zoom.us/6.2.0/lib/vendor/redux-thunk.min.js"></script>
+  <script src="https://source.zoom.us/6.2.0/lib/vendor/lodash.min.js"></script>
+  <script src="https://source.zoom.us/zoom-meeting-6.2.0.min.js"></script>
+  <script src="zoom-room.js"></script>
+</body>
+</html>
